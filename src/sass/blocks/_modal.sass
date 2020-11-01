@@ -1,0 +1,37 @@
+.modal
+   display: none
+   position: fixed
+   top: 0
+   left: 0
+   right: 0
+   bottom: 0
+   justify-content: center
+   align-items: center
+   z-index: 9999
+   opacity: 0
+   &_overlay
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(0,0,0,0.7)
+      z-index: -1
+   &_close
+      position: absolute
+      top: 20px
+      right: 20px
+      font-size: 60px
+      line-height: 100%
+      background: transparent
+      border: none
+      width: 60px
+      height: 60px
+      text-align: center
+      color: #fff
+      transition: all .2s linear
+      &:focus
+         outline: none
+      &:hover
+         color: $main-color
+         text-decoration: none

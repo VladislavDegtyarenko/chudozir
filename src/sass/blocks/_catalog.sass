@@ -1,0 +1,48 @@
+.catalog
+   min-height: 950px
+   position: relative
+   background: url('../img/catalog/bg-ellipses.png'), url('../img/ball-blur.png') 
+   background-position: center 255px, right -300px top 400px
+   background-repeat: repeat-y, no-repeat
+   overflow: hidden
+   &__brands
+      font-style: italic
+      margin-top: 35px
+   &__wrapper
+      margin-top: 42px
+      justify-content: space-between
+   &__item
+      display: flex
+      align-items: center
+      flex-direction: column
+      flex-basis: 31%
+      margin-bottom: 80px
+   &__image
+      margin-top: 38px
+      box-shadow: $card-shadow
+      width: 100%
+      @include image-fit
+   &__title
+      font-size: 20px
+   &__descr
+      margin-top: 25px
+      text-align: center
+      font-size: 14px
+      line-height: 24px
+      height: 120px
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+      overflow-y: hidden
+      span
+         display: block
+         margin-top: 22px
+         font-style: italic
+         font-size: inherit
+   &::before
+      content: url(../img/catalog/bg-glasses.png)
+      top: -380px
+      right: -290px
+      position: absolute
+      z-index: -1
+      

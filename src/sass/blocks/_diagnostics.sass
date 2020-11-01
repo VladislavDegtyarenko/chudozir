@@ -1,0 +1,65 @@
+.diagnostics
+   padding: 160px 0 260px
+   position: relative
+   background-image: url('../img/diagnostics/bg.png')
+   background-position: left 0 top -10px
+   background-repeat: no-repeat
+   background-blend-mode: soft-light
+   background-color: #1878c3
+   overflow: hidden
+   &__inner
+      display: flex
+      justify-content: space-between
+   &__text
+      max-width: 460px
+   &__title
+      text-align: left
+      color: #fff
+      text-transform: uppercase
+      margin-top: 50px
+      line-height: 60px
+   &__subtitle
+      margin-top: 75px
+      font-size: 22px
+      font-weight: 400
+      line-height: 1.45
+      color: #ffffff
+      width: 400px
+      z-index: 5
+      span
+         font-weight: 700
+         font-size: inherit
+         line-height: inherit
+         color: inherit
+   &__girl
+      position: absolute
+      bottom: 139px
+      left: calc(50% - 214px)
+      z-index: 2
+   &__100percent
+      position: absolute
+      bottom: 27px
+      left: calc(50% + 150px)
+      transform: translateX(-50%)
+      z-index: 3
+   &__ball
+      position: absolute
+      bottom: -80px
+      left: 5%
+      z-index: 3
+   &:before
+      content: ""
+      position: absolute
+      top: -40px
+      width: 100vw
+      height: 200px
+      background: #fff
+      clip-path: polygon(0 0, 100% 0, 100% 100px, 0% 100%)
+   &::after 
+      position: absolute
+      content: ""
+      bottom: -50px
+      width: 100vw
+      height: 250px
+      background: #fff
+      clip-path: polygon(0 100px,100% 0,100% 100%,0 100%)

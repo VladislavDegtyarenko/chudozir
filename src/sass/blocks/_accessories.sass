@@ -1,0 +1,34 @@
+.accessories
+   padding: 40px 0 50px
+   min-height: 550px
+   background: url('../img/accessories/bg-glasses.png') left -500px top -60px no-repeat
+   &__wrapper
+      justify-content: space-between
+      margin-top: 60px
+   &__item
+      flex-basis: 23%
+   &__title
+      height: 60px
+      font-size: 20px
+      display: flex
+      justify-content: center
+      align-items: center
+   &__image
+      margin-top: 30px
+      position: relative
+      width: 100%
+      height: 280px
+      @include image-fit
+      &::after
+         content: ""
+         display: block
+         position: absolute
+         background-color: #e8f1f9
+         top: 10px
+         left: 10px
+         width: inherit
+         height: inherit
+         z-index: -1
+   .button
+      margin: 70px auto 0
+      display: block

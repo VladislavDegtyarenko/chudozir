@@ -1,0 +1,37 @@
+.promo
+	min-height: 815px
+	background: url('../img/promo/bg-girl.png') bottom left calc( 50% + 406px ) no-repeat, url('../img/promo/glasses-bottom.png') bottom left calc(50% - 50px) no-repeat, url('../img/promo/glasses-left.png') left top 30px no-repeat, url('../img/promo/bg-transparent.png') center top 38px no-repeat
+	background-color: #f1f6fa
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%)
+	overflow: hidden
+	position: relative
+	
+	&__title
+		margin-top: 65px
+		font-size: 40px
+		font-weight: 700
+		line-height: 1.25
+		text-align: left
+		color: #4b4b4b
+		max-width: 750px
+		margin-bottom: 0
+		text-transform: uppercase
+	&__wrapper
+		margin-top: 20px
+		flex-direction: column
+	&__item
+		display: flex
+		align-items: center
+		max-width: 480px
+		margin-top: 14px
+		font-weight: 400
+		line-height: 1.5
+		text-align: left
+		color: $main-black
+		&::before
+			content: url('../img/promo/verified.png')
+			margin-right: 20px
+	.button
+		margin-top: 27px
+		
+	

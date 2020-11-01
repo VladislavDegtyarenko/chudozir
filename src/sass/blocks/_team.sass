@@ -1,0 +1,52 @@
+.team
+   padding-top: 125px
+   height: 1076px
+   background: url(../img/team/bg-team.png) center center/cover no-repeat
+   overflow: hidden
+   position: relative
+   &__wrapper
+      margin-top: 102px
+      justify-content: space-between
+   &__card
+      display: flex
+      flex-direction: column
+      flex-basis: 31%
+      &_img
+         width: 100%
+         height: 370px
+         box-shadow: $card-shadow
+         img
+            width: 100%
+            height: 100%
+            object-fit: cover
+      &_name
+         margin-top: 25px
+         font-size: 20px
+      &_descr
+         font-size: 14px
+         margin: 0 auto
+         margin-top: 10px
+         max-width: 280px
+         display: -webkit-box
+         -webkit-line-clamp: 2
+         -webkit-box-orient: vertical
+         overflow-y: hidden
+      &_button
+         margin: 20px auto 0
+         width: 270px
+   &:before
+      content: ""
+      position: absolute
+      top: -110px
+      width: 100vw
+      height: 200px
+      background: #fff
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100px)
+   &::after 
+      position: absolute
+      content: ""
+      bottom: -145px
+      width: 100vw
+      height: 250px
+      background: #fff
+      clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%)

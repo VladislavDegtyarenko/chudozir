@@ -1,0 +1,44 @@
+.footer
+   padding: 55px 0 20px
+   &__inner
+      display: flex
+      justify-content: space-between
+      align-items: center
+   .logo
+      width: 202px
+      height: 64px
+      display: block
+      img
+         width: 100%
+         height: auto
+   .policy
+      display: flex
+      flex-direction: column
+      justify-content: center
+      margin: 18px 0 0 70px
+      &_link
+         display: block
+         text-align: center
+         font-size: 14px
+         font-weight: 400
+      &_rights
+         text-align: center
+         font-size: 14px
+         font-weight: 400
+         margin-bottom: 0
+   .studio
+      display: flex
+      flex-wrap: nowrap
+      margin-top: 10px
+      span
+         text-align: right
+         font-size: 14px
+         font-weight: 400
+         margin-right: 30px
+         margin-top: 5px
+      &_logo
+         width: 170px
+         height: 42px
+         @include image-fit
+         img
+            object-fit: contain

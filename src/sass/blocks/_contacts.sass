@@ -1,0 +1,66 @@
+.contacts
+   background: url('../img/ball-blur.png') top 30px right -250px no-repeat
+   &__inner
+      display: flex
+      justify-content: space-between
+      flex-wrap: nowrap
+   &__main
+      flex-grow: 1
+      .title
+         text-align: left
+         margin-top: -15px
+      .subtitle
+         text-align: left
+         font-size: 30px
+         justify-content: flex-start
+      &_list
+         margin-top: 40px
+         .city
+            &:not(:first-child)
+               margin-top: 30px
+            text-align: left
+            font-size: 16px
+         .address
+            text-align: left
+            margin-bottom: 0
+            line-height: 1.73
+            a
+               text-align: inherit
+               line-height: inherit
+               font-size: inherit
+      .email-phone
+         margin-top: 20px
+         .text-regular
+            text-align: left
+            font-weight: 700
+      .questions
+         margin-top: 30px
+         &__title
+            font-size: 20px
+            text-align: left
+         &__descr
+            margin-top: 5px
+            text-align: left
+         &__button
+            width: 270px
+            margin-top: 35px
+   &__side
+      display: flex
+      justify-content: space-between
+      align-content: flex-start
+      flex-basis: 66%
+      flex-wrap: wrap
+      padding-top: 10px
+      &_photo
+         width: 49%
+         height: 197px
+         img
+            width: 100%
+            height: 100%
+            object-fit: cover
+      .map
+         width: 100%
+         margin-top: 22px
+         iframe
+            height: 550px
+            width: 100%
